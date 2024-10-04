@@ -1,0 +1,124 @@
+.homepage-container {
+    background-image: url('../Assets/Main1.jpg');
+    background-size: cover; 
+    background-position: center; 
+    padding: 14px 8% 14px 5%; 
+    height: 70vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+}
+.homepage-left {
+    text-align: left; 
+}
+.create-trip-button {
+    margin-bottom: 20px;
+}
+
+.image-grid-item {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-image {
+    width: auto; 
+    height: 44px; 
+    max-width: 44px; 
+    border-radius: 10px; 
+    margin-left: 64px; 
+    filter: brightness(0) invert(1);
+}
+
+.home-image1 {
+    width: auto; 
+    height: 44px; 
+    max-width: 44px;
+    border-radius: 10px; 
+    margin-left: 64px;
+    filter: brightness(0) invert(1);
+}
+
+.home-image2 {
+    width: auto; 
+    height: 44px; 
+    max-width: 44px;
+    border-radius: 10px; 
+    margin-left: 64px; 
+    filter: brightness(0) invert(1);
+}
+
+.image-grid2 {
+   margin-top: 120px;
+}
+
+
+.cta-box {
+    display: flex;
+    margin-left: 44px;
+}
+
+.cta-content {
+    text-align: center;
+    max-width: 360px;
+    width: 100%;
+}
+
+.image-grid2-item{
+    margin-left: 0px;
+}
+
+.image-grid2-item1{
+    margin-left: 44px;
+}
+
+
+
+@media (max-width: 600px) {
+    .homepage-container {
+        padding: 16px 5%; 
+    }
+    .cta-box {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .home-image {
+        width: 40px; 
+        height: 40px;
+    }
+    .homepage-left {
+        text-align: center; /* Center text on smaller screens */
+    }
+    .homepage-container {
+        background-image: url('../Assets/Main1.jpg');
+        background-size: cover; 
+        background-position: center; 
+        padding: 84% 16px;
+        min-height: 100vh; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        position: relative; 
+    }
+    .image-grid2 {
+        margin-top: 60px;
+     }
+     .image-grid2-item{
+        margin-left: 0px;
+    }
+    .home-image {
+        margin-left: 0px; 
+    }
+    .home-image1 {
+        margin-left: 0px; 
+    }
+    .home-image2 {
+        margin-left: 0px; 
+    }
+    .image-grid2-item1{
+        margin-left: 0px;
+    }
+}

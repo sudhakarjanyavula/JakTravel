@@ -1,0 +1,113 @@
+.carousel-container {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 32px;
+    position: relative; 
+  }
+  
+  .image-group {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel-image {
+    width: 70%;
+    height: 300px;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px; 
+    transition: transform 0.3s ease;
+  }
+
+  .image-container:hover .carousel-image {
+    transform: scale(1.1);
+    border-radius: 10px;
+  }
+
+  .create-trip-button1 {
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+    .image-container:hover .image-caption,
+    .image-container:hover .image-description,
+    .image-container:hover .create-trip-button1 {
+        opacity: 1;
+        transform: translateY(-55px);
+    }
+
+    .image-container:hover .create-trip-button1 {
+        opacity: 1;
+        transform: translateY(-45px);
+    }
+
+
+  .image-caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* background-colr: rgba(0, 0, 0, 0.5); */
+    color: white;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 1rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .image-description {
+    position: absolute;
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    margin-top: 5px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    transition: transform 0.3s ease;
+  }
+
+  .create-trip-button1 {
+    position: absolute;
+    bottom: 10px;
+    background-color: #baff39;
+    color: black;
+    border-color: #000000;
+    padding: 10px 20px;
+    text-transform: none;
+    transition: background-color 0.3s ease;
+    /* transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease; */
+    /* opacity: 0; */
+    /* transform: translateY(0); */
+}
+
+  .arrow {
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    border-radius: 50%; 
+    width: 40px; 
+    height: 40px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .left-arrow {
+    left: 0; 
+  }
+  
+  .right-arrow {
+    right: 0; 
+  }
